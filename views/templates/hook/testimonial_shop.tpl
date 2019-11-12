@@ -1,6 +1,7 @@
 <div id="custom-testimonial">
 	<div class="col-sm-12"> 
 		<p class="h1 text-muted">{l s='Testimonial' }</p>
+		{$count = count($testimonials)}
 		{foreach from=$testimonials item=t}
 			<div class="row">
 				<div class="testimonial-shop-img col-lg-2 col-md-2 col-sm-12 col-xs-12">
@@ -17,7 +18,11 @@
 					<small>{$t.name}</small>
 				</div>
 			</div>	
-			<hr />
+			{[$count--]}
+			{if $count>0}
+				<hr />
+			{/if}
+			
 		{/foreach}
 		
 	</div>

@@ -401,7 +401,7 @@ class Testimonial_Shop extends Module
 
                         $url_remove_img = _PS_MODULE_DIR_.'testimonial_shop/images/'.$img_rm;
 
-                        if(file_exists($url_remove_img)){
+                        if(file_exists($url_remove_img) && file_exists($_FILES["fileToUpload"]["tmp_name"])){
                             @unlink($url_remove_img);
                         }
 
