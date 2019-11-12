@@ -24,7 +24,8 @@
 </div>
 
 <style>
-.testimonial-shop-img{
-
-}
+	#custom-testimonial{
+		margin-top:20px;
+		margin-bottom:20px;
+	}
 </style>
