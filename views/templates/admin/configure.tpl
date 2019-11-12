@@ -150,18 +150,26 @@ $(function() {
  <div class="panel">		  
 	<div clas="col-12"> 
 		{foreach from=$testimonials item=t}
-			{$t.name} - 
-			
-			<img src="{$base_img}{$t.img}" style="max-width:100px;"> - 
-			{$t.message} - 
-			<!-- Botão para acionar modal -->
-			<button type="button" class="btn btn-link" data-toggle="modal" data-target="#modalEdit{$t.id}">
-				Editar
-			</button>
-			<!-- Button trigger modal DELETE -->
-			<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelet{$t.id}">
-				Delete
-			</button>
+
+			<div class="row">
+				<div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+					<img src="{$base_img}{$t.img}" style="max-width:100px;"> 
+				</div>
+				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12" style="text-align:left;">
+					<b>{$t.name}</b><br>
+					{$t.message}<br>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12" style="text-align:left;">
+					<!-- Botão para acionar modal -->
+					<button type="button" class="btn btn-link" data-toggle="modal" data-target="#modalEdit{$t.id}">
+						Editar
+					</button>
+					<!-- Button trigger modal DELETE -->
+					<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelet{$t.id}">
+						Delete
+				</button>
+				</div>
+			</div>
 
 
 			<br>
