@@ -1,4 +1,4 @@
-<div id="custom-text">
+<div id="custom-testimonial">
 	<div class="col-sm-12"> 
 		
 		{foreach from=$testimonials item=t}
