@@ -402,7 +402,7 @@ class Testimonial_Shop extends Module
                         $url_remove_img = _PS_MODULE_DIR_.'testimonial_shop/images/'.$img_rm;
 
                         if(file_exists($url_remove_img)){
-                            unset($url_remove_img);
+                            @unlink($url_remove_img);
                         }
 
                     }else{
@@ -428,8 +428,10 @@ class Testimonial_Shop extends Module
 
             $url_remove_img = _PS_MODULE_DIR_.'testimonial_shop/images/'.$img_rm;
             //die($url_remove_img);
+            // if ($image && file_exists(dirname(__FILE__).'/images/'.$image))
+            // $res &= @unlink(dirname(__FILE__).'/images/'.$image);
             if(file_exists($url_remove_img)){
-                unset($url_remove_img);
+                @unlink($url_remove_img);
             }
         }
 
