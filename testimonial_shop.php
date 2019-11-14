@@ -313,7 +313,7 @@ class Testimonial_Shop extends Module
                 if($img){
 
                     if($message){
-                        TestimonialShop::add($name, $img, $message);
+                        TestimonialShop::addNew($name, $img, $message);
                     }else{
                         $erro = "Please insert something in this field.'";
                     }
@@ -397,7 +397,7 @@ class Testimonial_Shop extends Module
 
                     if($message){
                         $img_rm = TestimonialShop::selectImage($id);
-                        TestimonialShop::update($id, $name, $img, $message);
+                        TestimonialShop::updateNow($id, $name, $img, $message);
 
                         $url_remove_img = _PS_MODULE_DIR_.'testimonial_shop/images/'.$img_rm;
 

@@ -24,7 +24,7 @@ class TestimonialShop extends ObjectModel
         return $img;
     }
 
-    public function add($name, $img, $message){
+    public function addNew($name, $img, $message){
         
         $sql = 'SELECT hook FROM '._DB_PREFIX_.'testimonial_shop_db';
         $hook = Db::getInstance()->getValue($sql);
@@ -59,7 +59,7 @@ class TestimonialShop extends ObjectModel
         die('Error update Local.');
     }
 
-    public function update($id, $name, $img, $message){
+    public function updateNow($id, $name, $img, $message){
         // die($id.' name: '.$name.' img: '.$img.' msm: '.$message);
         $sql = 'SELECT hook FROM '._DB_PREFIX_.'testimonial_shop_db';
         $hook = Db::getInstance()->getValue($sql);
