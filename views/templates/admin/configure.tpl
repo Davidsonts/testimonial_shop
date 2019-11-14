@@ -120,7 +120,7 @@ $(function() {
 	  	<div class="col-sm-2">
 	  	</div>
 		<div class="col-sm-8">
-		  <button type="submit" name="save" class="btn btn-default ">{l s='Save' }</button>
+		  <button type="submit" name="save" class="btn btn-primary">{l s='Save' }</button>
 		</div>
 	  </div>
 	</form>
