@@ -117,6 +117,8 @@ $(function() {
 		</div>
 	  </div> *}
 	  <div class="form-group">
+	  	<div class="col-sm-2">
+	  	</div>
 		<div class="col-sm-8">
 		  <button type="submit" name="save" class="btn btn-default ">{l s='Save' }</button>
 		</div>
